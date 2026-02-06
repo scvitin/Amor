@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #0f0c14, #1c1526);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* TOPO */
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #ffd6e5;
+}
+
+.hero p {
+  color: #f3b6cf;
+  margin-top: 10px;
+}
+
+/* SLIDER */
+.slider {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.slides {
+  width: 260px;
+  position: relative;
+}
+
+.slide {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1.2s ease;
+  text-align: center;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+.slide p {
+  margin-top: 14px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: #ffeaf2;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 40px 10px;
+  color: #f3b6cf;
+}
+
+/* CORAÇÕES */
+.hearts span {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  color: pink;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
